@@ -1,9 +1,9 @@
 {
-  "name": "gulp_v2_test",
+  "name": "gulp-build_v2",
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "prepare": "husky install",
+    "prepare": "npx husky install",
     "dev": "gulp watch",
     "build:dev": "gulp build",
     "build:prod": "gulp build --prod"
