@@ -173,9 +173,9 @@ const dayDecrement = (date) => {
   const d = new Date(date);
 
   if (d.getDate() - 1 === 0) {
-    if (d.getMonth() - 1 === 0) {
+    if (d.getMonth() - 1 < 0) {
       d.setYear(d.getYear() - 1);
-      d.setMonth(12);
+      d.setMonth(12 - 1);
       d.setDate(31);
     } else {
       d.setMonth(d.getMonth() - 1);
